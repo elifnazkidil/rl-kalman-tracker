@@ -66,7 +66,6 @@ class AutonomousEnv(gym.Env):
         # Sınırları kontrol et
         self.agent_pos = np.clip(self.agent_pos, 0, self.grid_size)
         
-        reward = -0.1 # Zaman cezası (hızlı gitmesi için)
         terminated = False
         truncated = False
         
